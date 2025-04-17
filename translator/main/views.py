@@ -10,4 +10,3 @@ def home(request):
 		translation = translator.translate(text) 
 		return HttpResponse(translation) 
 	return render(request,"main/index.html")
-

@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <style> 
+        body {background-color: powderblue;} 
+        form{text-align: center; padding-top: 350px;} 
+        option{font-family: 'Times New Roman', Times, serif;} 
+        select{font-family: 'Times New Roman', Times, serif;} 
+        button{font-family: 'Times New Roman', Times, serif;} 
+    </style>
+	<title>Translator</title> 
+</head> 
+<body> 
+<form method="post"> 
+	{% csrf_token %} 
+	<input type="text" name="translate" required> 
+	<br> 
+	<select required name="language"> 
+		<option value="Arabic">Arabic</option> 
+        <option value="Chinese">Chinese</option> 
+        <option value="Dutch">Dutch</option> 
+        <option value="German">German</option> 
+        <option value="Greek">Greek</option> 
+        <option value="Hindi">Hindi</option> 
+        <option value="Italian">Italian</option> 
+        <option value="Japanese">Japanese</option> 
+        <option value="Korean">Korean</option> 
+        <option value="Marathi">Marathi</option> 
+        <option value="Polish">Polish</option> 
+        <option value="Russian">Russian</option> 
+        <option value="Spanish">Spanish</option> 
+        <option value="Thai">Thai</option> 
+        <option value="Vietnamese">Vietnamese</option>
+	</select> 
+	<br> 
+	<button type="submit">Translate</button> 
+</form> 
+</body> 
+</html> 
