@@ -3,14 +3,17 @@
 <head> 
     <style> 
         body {background-color: powderblue;} 
-        form{text-align: center; padding-top: 350px;} 
+        form{text-align: center; padding-top: 330px;} 
         option{font-family: 'Times New Roman', Times, serif;} 
+        input{font-family: 'Times New Roman', Times, serif;}
         select{font-family: 'Times New Roman', Times, serif;} 
         button{font-family: 'Times New Roman', Times, serif;} 
+        h1{text-align: center;color: beige;}
     </style>
 	<title>Translator</title> 
 </head> 
 <body> 
+<h1>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h1>
 <form method="post"> 
 	{% csrf_token %} 
 	<input type="text" name="translate" required> 
@@ -23,7 +26,6 @@
         <option value="Greek">Greek</option> 
         <option value="Hindi">Hindi</option> 
         <option value="Italian">Italian</option> 
-        <option value="Japanese">Japanese</option> 
         <option value="Korean">Korean</option> 
         <option value="Marathi">Marathi</option> 
         <option value="Polish">Polish</option> 
@@ -34,6 +36,7 @@
 	</select> 
 	<br> 
 	<button type="submit">Translate</button> 
+    
 </form> 
 </body> 
 </html> 
