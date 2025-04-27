@@ -1,8 +1,54 @@
 <!DOCTYPE html> 
 <html> 
 <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <style> 
-        body {background-color: rgb(204, 236, 241);} 
+        body {background: linear-gradient(to right, #e0e4ff, #91a6fa);
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;} 
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 180px;
+            height: 100%;
+            background-color: #aebdfb;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 18px;
+        }
+        .sidebar a:hover {
+            background-color: #aebdfb;
+        }
+        .rightbar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 180px;
+            height: 100%;
+            background-color: #aebdfb;
+            padding-top: 20px;
+        }
+        .rightbar a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 18px;
+        }
+        .rightbar a:hover {
+            background-color: #aebdfb;
+        }
         form{text-align: center; padding-top: 330px;} 
         option{font-family: 'Times New Roman', Times, serif;} 
         
@@ -14,14 +60,27 @@
         select{font-family: 'Times New Roman', Times, serif;} 
         button{font-family: 'Times New Roman', Times, serif;} 
         h1{text-align: center;color: beige;}
+        h2{text-align: center; color: #4b0082; margin-top: 50px; font-size: 48px;  font-family: 'Comic Sans MS', cursive, sans-serif;}
     </style>
 	<title>Translator</title> 
 </head> 
 <body> 
+    <div class="sidebar">
+        <a href="https://www.britannica.com/topic/language" target="_blank">What is Language?</a>
+        <a href="https://www.whylearnlanguages.org/" target="_blank">Why Learn Languages?</a>
+        <a href="https://www.ethnologue.com/" target="_blank">Languages of the World</a>
+    </div>
+
+    <div class="rightbar">
+        <a href="https://en.wikipedia.org/wiki/History_of_language" target="_blank">History of Language</a>
+        <a href="https://www.babbel.com/en/magazine/fun-language-facts" target="_blank">Fun Language Facts</a>
+        <a href="https://www.transparent.com/" target="_blank">Learn a New Language</a>
+    </div>
 <h1>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h1>
+<h2> 🌍Language Translator 🌍</h2>
 <form method="post"> 
 	{% csrf_token %} 
-	<input type="text" name="search" placeholder="Search.."required> 
+	<input type="text" name="search" placeholder="Type to Translate"required> 
 	<br> 
 	<select required name="language"> 
 		<option value="Arabic">Arabic</option> 
