@@ -16,46 +16,58 @@
             left: 0;
             width: 180px;
             height: 100%;
-            background-color: #aebdfb;
-            padding-top: 20px;
+            background-color: #6c5ce7;
+            padding-top: 40px;
+            border-radius: 10px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
         }
         .sidebar a {
             display: block;
             color: white;
-            padding: 15px;
+            padding: 15px 20px;
             text-decoration: none;
             font-family: 'Comic Sans MS', cursive, sans-serif;
             font-size: 18px;
+            margin: 5px 0;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, padding-left 0.3s ease;
         }
         .sidebar a:hover {
-            background-color: #aebdfb;
+            background-color: #a29bfe;
+            padding-left: 30px;
         }
         .rightbar {
             position: fixed;
             top: 0;
             right: 0;
-            width: 180px;
+            width: 220px;
             height: 100%;
-            background-color: #aebdfb;
-            padding-top: 20px;
+            background-color: #6c5ce7; 
+            padding-top: 40px;
+            border-radius: 10px;
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
         }
         .rightbar a {
             display: block;
             color: white;
-            padding: 15px;
+            padding: 15px 20px;
             text-decoration: none;
             font-family: 'Comic Sans MS', cursive, sans-serif;
             font-size: 18px;
+            margin: 5px 0;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, padding-left 0.3s ease;
         }
         .rightbar a:hover {
-            background-color: #aebdfb;
+            background-color: #a29bfe; /* Lighter shade of purple */
+            padding-left: 30px;
         }
-        body{background-image: url('https://www.alamy.com/word-cloud-thank-you-in-five-language-multicolored-letters-and-different-orientations-on-light-background-image386748705.html​');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;}
-    
-         form {
+        body{background-image: url("https://images.unsplash.com/photo-1517817428046-1d3b7fe9d68f?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDk2fHxsaWZlfGVufDB8fHx8fDE2ODg0NTY2NzI&ixlib=rb-1.2.1&q=80&w=1080");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;}
+
+        form {
     text-align: center; 
     padding-top: 200px; 
 }
@@ -111,7 +123,7 @@ button:hover {
         <a href="https://www.transparent.com/" target="_blank">Learn a New Language</a>
     </div>
 <h1>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h1>
-<h2> 🌍Language Translator 🌍</h2>
+<h2> 🌍Language Translator🌍</h2>
 <form method="post"> 
 	{% csrf_token %} 
 	<input type="text" name="search" placeholder="Type to Translate"required> 
