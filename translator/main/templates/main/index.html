@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Language Translator</title> 
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
     <style> 
-        body {background: linear-gradient(to right, #e0e4ff, #91a6fa);
+        body {
+            background: linear-gradient(to right, #e0e4ff, #91a6fa);
             margin: 0;
-            font-family: 'Times New Roman', Times, serif;} 
+            font-family: 'Times New Roman', Times, serif;
+        } 
         .sidebar {
             position: fixed;
             top: 0;
             left: 0;
             width: 180px;
             height: 100%;
-            background-color: #eaa4ff;
+            background-color: #3630b5;
             padding-top: 40px;
             border-radius: 10px;
             box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
         }
-
         .sidebar a {
             display: block;
             color: white;
@@ -37,7 +39,7 @@
             margin-right: 10px; 
         }
         .sidebar a:hover {
-            background-color: #ffbee5;
+            background-color: #c7b1ff;
             padding-left: 30px;
         }
         .rightbar {
@@ -46,7 +48,7 @@
             right: 0;
             width: 220px;
             height: 100%;
-            background-color: #eaa4ff; 
+            background-color: #3630b5; 
             padding-top: 40px;
             border-radius: 10px;
             box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
@@ -66,12 +68,12 @@
             margin-right: 10px; 
         }
         .rightbar a:hover {
-            background-color: #ffbee5;
+            background-color: #c7b1ff;
             padding-left: 30px;
         }
 
         body{
-            background-image: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+            background-image: url("https://img.freepik.com/premium-vector/cute-planet-earth-hugging-itself-ecology-vector-illustration_875224-4337.jpg?w=1380");
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -91,7 +93,7 @@
             font-family: 'Times New Roman', Times, serif;
             border: 2px solid; 
             border-radius: 8px; 
-            border-color: rgb(255, 158, 232);
+            border-color: rgb(255, 159, 233);
             width: 50%; 
             padding: 15px; 
             font-size: 22px; 
@@ -186,7 +188,7 @@
 
     <div class="rightbar">
         <a href="https://en.wikipedia.org/wiki/History_of_language" target="_blank"><i class="fas fa-history"></i>History of Language</a>
-        <a href="https://www.babbel.com/en/magazine/fun-language-facts" target="_blank"><i class="fas fa-lightbulb"></i>Fun Language Facts</a>
+        <a href="https://www.globallanguageservices.co.uk/surprising-language-facts/" target="_blank"><i class="fas fa-lightbulb"></i>Fun Language Facts</a>
         <a href="https://www.transparent.com/" target="_blank"><i class="fas fa-comments"></i>Learn a New Language</a>
         <a href="https://www.youtube.com/watch?v=McZW0iDsZns" target="_blank"><i class="fas fa-video"></i>Learn Mandarin Chinese</a>
         <a href="https://www.youtube.com/watch?v=VeH03PzD25E" target="_blank"><i class="fas fa-video"></i>Learn Italian</a>
@@ -198,8 +200,7 @@
 <form method="POST" action="/">
     {% csrf_token %}
     <div id="greeting" style="text-align: center; font-size: 24px; color: #4b0082; font-family: 'Comic Sans MS', cursive, sans-serif;"></div>
-    <div class="instruction-text">Enter a word or phrase to translate!</div>
-    <input type="text" name="translate" id="translate"> 
+    <input type="text" name="translate" id="translate" placeholder="Enter to translate!"> 
 	<br> 
 	<select required name="language"> 
     <option value="Arabic">&#x1F1F0;&#x1F1F7; Arabic</option> 
