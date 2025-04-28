@@ -24,7 +24,6 @@ def home(request):
                 'Vietnamese': 'vi',
             }
 
-            # Get the language code based on the language selected
             language_code = language_mapping.get(language)
 
             if language_code:

@@ -16,7 +16,7 @@
             left: 0;
             width: 180px;
             height: 100%;
-            background-color: #6c5ce7;
+            background-color: #eaa4ff;
             padding-top: 40px;
             border-radius: 10px;
             box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
@@ -37,7 +37,7 @@
             margin-right: 10px; 
         }
         .sidebar a:hover {
-            background-color: #a29bfe;
+            background-color: #ffbee5;
             padding-left: 30px;
         }
         .rightbar {
@@ -46,7 +46,7 @@
             right: 0;
             width: 220px;
             height: 100%;
-            background-color: #6c5ce7; 
+            background-color: #eaa4ff; 
             padding-top: 40px;
             border-radius: 10px;
             box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
@@ -66,54 +66,110 @@
             margin-right: 10px; 
         }
         .rightbar a:hover {
-            background-color: #a29bfe; /* Lighter shade of purple */
+            background-color: #ffbee5;
             padding-left: 30px;
         }
-        body{background-image: url("https://images.unsplash.com/photo-1517817428046-1d3b7fe9d68f?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDk2fHxsaWZlfGVufDB8fHx8fDE2ODg0NTY2NzI&ixlib=rb-1.2.1&q=80&w=1080");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;}
+
+        body{
+            background-image: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
 
         form {
-    text-align: center; 
-    padding-top: 200px; 
-}
-input[type=text] {
-    font-family: 'Times New Roman', Times, serif;
-    border: 2px solid; 
-    border-radius: 8px; 
-    border-color: rgb(255, 158, 232);
-    width: 50%; 
-    padding: 15px; 
-    font-size: 22px; 
-    margin-bottom: 20px;
-}
-select {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    padding: 12px;
-    border-radius: 6px;
-    margin-top: 10px;
-}
-button {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 22px;
-    padding: 15px 40px;
-    border-radius: 8px;
-    border: none;
-    background-color: #4b0082;
-    color: white;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-button:hover {
-    background-color: #6a5acd;
-}
-
-
-        h1{text-align: center;color: beige;}
-        h2{text-align: center; color: #4b0082; margin-top: 50px; font-size: 48px;  font-family: 'Comic Sans MS', cursive, sans-serif;}
+            text-align: center;
+            padding-top: 150px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            width: 40%;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+        input[type=text] {
+            font-family: 'Times New Roman', Times, serif;
+            border: 2px solid; 
+            border-radius: 8px; 
+            border-color: rgb(255, 158, 232);
+            width: 50%; 
+            padding: 15px; 
+            font-size: 22px; 
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        input[type="text"]:focus {
+            border-color: #4b0082;
+            box-shadow: 0 0 8px rgba(75, 0, 130, 0.7);
+            transform: scale(1.05);
+        }
+        select {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            padding: 12px;
+            border-radius: 6px;
+            margin-top: 10px;
+            width: 85%;
+            background-color: white;
+            border: 2px solid #ccc;
+            transition: all 0.3s ease;
+        }
+        select:focus {
+            border-color: #4b0082;
+            transform: scale(1.05);
+            box-shadow: 0 0 8px rgba(75, 0, 130, 0.7);
+        }
+        button {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 22px;
+            padding: 15px 40px;
+            border-radius: 8px;
+            border: none;
+            background-color: #4b0082;
+            color: white;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        button:hover {
+            background-color: #6a5acd;
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .greeting {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            color: #4a38c3;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin-top: 20px; 
+        }
+        .instruction-text {
+            font-size: 28px; 
+            font-weight: bold; 
+            color: #4b0082;
+            margin-top: 20px; 
+            text-align: center; 
+        }
+        h1{
+            text-align: center;
+            color: beige;
+        }
+        h2{text-align: center; 
+            color: #4b0082; 
+            margin-top: 50px; 
+            font-size: 48px;  
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
     </style>
 	<title>Translator</title> 
 </head> 
@@ -122,38 +178,62 @@ button:hover {
         <a href="https://www.britannica.com/topic/language" target="_blank"><i class="fas fa-language"></i>What is Language?</a>
         <a href="https://www.whylearnlanguages.org/" target="_blank"><i class="fas fa-book-open"></i>Why Learn Languages?</a>
         <a href="https://www.ethnologue.com/" target="_blank"><i class="fas fa-globe"></i>Languages of the World</a>
+        <a href="https://www.youtube.com/watch?v=xg60VxyK-9I" target="_blank"><i class="fas fa-video"></i>Learn German</a>
+        <a href="https://www.youtube.com/watch?v=ujDtm0hZyII" target="_blank"><i class="fas fa-video"></i>Learn French</a>
+        <a href="https://www.youtube.com/watch?v=2SIdIAMzHH0" target="_blank"><i class="fas fa-video"></i>Learn Spanish</a>
+        <a href="https://www.youtube.com/watch?v=UJR5rm9HhTA" target="_blank"><i class="fas fa-video"></i>Learn Japanese</a>
     </div>
 
     <div class="rightbar">
         <a href="https://en.wikipedia.org/wiki/History_of_language" target="_blank"><i class="fas fa-history"></i>History of Language</a>
         <a href="https://www.babbel.com/en/magazine/fun-language-facts" target="_blank"><i class="fas fa-lightbulb"></i>Fun Language Facts</a>
         <a href="https://www.transparent.com/" target="_blank"><i class="fas fa-comments"></i>Learn a New Language</a>
+        <a href="https://www.youtube.com/watch?v=McZW0iDsZns" target="_blank"><i class="fas fa-video"></i>Learn Mandarin Chinese</a>
+        <a href="https://www.youtube.com/watch?v=VeH03PzD25E" target="_blank"><i class="fas fa-video"></i>Learn Italian</a>
+        <a href="https://www.youtube.com/watch?v=QhhI0dyqbpE" target="_blank"><i class="fas fa-video"></i>Learn Russian</a>
+        <a href="https://www.youtube.com/watch?v=X1mC1XY65Kc" target="_blank"><i class="fas fa-video"></i>Learn Arabic</a>
     </div>
 <h1>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h1>
 <h2> 🌍Language Translator🌍</h2>
 <form method="POST" action="/">
     {% csrf_token %}
+    <div id="greeting" style="text-align: center; font-size: 24px; color: #4b0082; font-family: 'Comic Sans MS', cursive, sans-serif;"></div>
+    <div class="instruction-text">Enter a word or phrase to translate!</div>
     <input type="text" name="translate" id="translate"> 
 	<br> 
 	<select required name="language"> 
-		<option value="Arabic">Arabic</option> 
-        <option value="Chinese">Chinese</option> 
-        <option value="Dutch">Dutch</option> 
-        <option value="German">German</option> 
-        <option value="Greek">Greek</option> 
-        <option value="Hindi">Hindi</option> 
-        <option value="Italian">Italian</option> 
-        <option value="Korean">Korean</option> 
-        <option value="Marathi">Marathi</option> 
-        <option value="Polish">Polish</option> 
-        <option value="Russian">Russian</option> 
-        <option value="Spanish">Spanish</option> 
-        <option value="Thai">Thai</option> 
-        <option value="Vietnamese">Vietnamese</option>
-	</select> 
+    <option value="Arabic">&#x1F1F0;&#x1F1F7; Arabic</option> 
+    <option value="Chinese">&#x1F1E8;&#x1F1F3; Chinese</option> 
+    <option value="Dutch">&#x1F1E9;&#x1F1F0; Dutch</option> 
+    <option value="German">&#x1F1E9;&#x1F1F7; German</option> 
+    <option value="Greek">&#x1F1EC;&#x1F1F7; Greek</option> 
+    <option value="Hindi">&#x1F1EE;&#x1F1F3; Hindi</option> 
+    <option value="Italian">&#x1F1EE;&#x1F1F9; Italian</option> 
+    <option value="Korean">&#x1F1F0;&#x1F1F7; Korean</option> 
+    <option value="Marathi">&#x1F1F2;&#x1F1F3; Marathi</option> 
+    <option value="Polish">&#x1F1F5;&#x1F1F1; Polish</option> 
+    <option value="Russian">&#x1F1F7;&#x1F1FA; Russian</option> 
+    <option value="Spanish">&#x1F1EA;&#x1F1F8; Spanish</option> 
+    <option value="Thai">&#x1F1F9;&#x1F1F0; Thai</option> 
+    <option value="Vietnamese">&#x1F1FB;&#x1F1F3; Vietnamese</option>
+</select>
+
 	<br> 
 	<button type="submit">Translate</button> 
     
-</form> 
+</form>
+<script>
+let hours = new Date().getHours(); 
+let greeting = "";
+
+if (hours < 12) {
+    greeting = "Good Morning!";  
+} else if (hours < 18) {
+    greeting = "Good Afternoon!"; 
+} else {
+    greeting = "Good Evening!";  
+}
+document.getElementById("greeting").innerText = greeting;
+</script>
 </body> 
 </html> 
