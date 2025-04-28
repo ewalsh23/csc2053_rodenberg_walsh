@@ -131,9 +131,9 @@ button:hover {
     </div>
 <h1>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h1>
 <h2> 🌍Language Translator🌍</h2>
-<form method="post"> 
-	{% csrf_token %} 
-	<input type="text" name="search" placeholder="Type to Translate"required> 
+<form method="POST" action="/">
+    {% csrf_token %}
+    <input type="text" name="translate" id="translate"> 
 	<br> 
 	<select required name="language"> 
 		<option value="Arabic">Arabic</option> 
